@@ -1,0 +1,48 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F2F5FF;
+    min-height: 100vh;
+}
+
+#logo_audaces {
+    margin-top: 25vh;
+}
+
+#box_login {
+display: flex;
+flex-direction: column;
+align-items: stretch;
+text-align: center;
+width: 480px;
+height: 407px;
+margin: 40px;
+padding: 40px;
+color: #B4B6C1;
+background: #FFFFFF;
+border-radius: 8px;
+font-size: 16px;
+}
+
+#box_login > * {
+    margin: 12px;
+}
+
+form > * {
+    width: 100%;
+}
+
+h4 {
+    color: black;
+    font-weight: 600;
+}
+
+#forgot_pwd {
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #989898;
+}

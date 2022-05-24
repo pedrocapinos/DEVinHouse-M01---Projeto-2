@@ -1,0 +1,14 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.container {
+    margin: 50px;
+}
+
+.table {
+    margin: 50px;
+}
+

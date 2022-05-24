@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+body > * {
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #0073CF;
+	border-color: #0073CF;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+a:hover {
+	text-decoration: none;
+}

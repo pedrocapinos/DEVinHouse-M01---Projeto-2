@@ -1,0 +1,66 @@
+:host {
+    width: 220px;
+    min-height: 100vh;
+    background-color: #FEFEFE;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #EBF0FE;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-grow: 1;
+    margin-bottom: 90px;
+}
+
+#logo_isa {
+    margin-top: 43px;
+    margin-bottom: 14px;
+}
+
+#titulo {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    margin: 8px 20px 8px 20px;
+    padding: 0px 15px 0px 15px;
+    font-weight: 400;
+    font-size: 14px;
+    min-width: 180px;
+    min-height: 34px;
+    border-radius: 6px;
+    color: #6A7090;
+    text-indent: 15px;
+}
+
+.active {
+    background-color: #EBF0FE;
+    color: #5874DF;
+}
+
+.menu-section {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #B4B6C1;
+}
