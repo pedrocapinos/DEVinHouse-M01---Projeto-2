@@ -1,0 +1,12 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    width: 100%;
+}
+
+button {
+    align-self: flex-end;
+    margin: 40px;
+    width: 220px;
+}

@@ -11,6 +11,7 @@ import { CollectionsComponent } from './components/collections/collections.compo
 import { ModelsComponent } from './components/models/models.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

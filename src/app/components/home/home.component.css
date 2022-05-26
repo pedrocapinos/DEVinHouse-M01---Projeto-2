@@ -12,3 +12,8 @@
     margin: 50px;
 }
 
+.card {
+    width: 18rem;
+    height: 6rem;
+    background-color: #EBF0FA;
+}
