@@ -1,0 +1,50 @@
+<h3 *ngIf="editar">Editar Modelo</h3>
+<h3 *ngIf="!editar">Criar Modelo</h3>
+<form [formGroup]="formularioModelo">
+    <div class="row">
+        <div class="col-md-5">
+            <input type="text" formControlName='nome' class="form-control" name="" id="" placeholder="Nome do Modelo">
+        </div>
+        <div class="col-md-5">
+            <input type="text" formControlName='responsavel' class="form-control" name="" id=""
+                placeholder="Responsável pelo Modelo">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <select formControlName='tipo' class="form-control" name="" id="">
+                <option value="" disabled selected hidden>Tipo do Modelo</option>
+                <option *ngFor="let item of tiposModelo">{{item}}</option>
+            </select>
+        </div>
+        <div class="col-md-5">
+            <select formControlName='colecao' class="form-control" name="" id="">
+                <option value="" disabled selected hidden>Selecionar coleção</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <p>Possui bordado?</p>
+            <input type="radio" formControlName='bordado' id="comBordado" [value]=true name="bordado">
+            <label class="form-check-label" for="comBordado">Sim</label>
+            <input type="radio" formControlName='bordado' id="semBordado" [value]=false name="bordado">
+            <label class="form-check-label" for="semBordado">Não</label>
+        </div>
+        <div class="col-md-5">
+            <p>Possui estampa?</p>
+            <input type="radio" formControlName='estampa' id="comEstampa" [value]=true name="estampa">
+            <label class="form-check-label" for="comEstampa">Sim</label>
+            <input type="radio" formControlName='estampa' id="semEstampa" [value]=false name="estampa">
+            <label class="form-check-label" for="semEstampa">Não</label>
+        </div>
+    </div>
+</form>
+    <footer>
+        <button *ngIf="editar"class="btn btn-danger btn-lg" (click)=deletarModelo()>Excluir</button>
+        <button type="button" class="btn btn-secondary btn-lg" (click)=cancelarModelo();>Cancelar</button>
+        <button type="button" class="btn btn-primary btn-lg" (click)="salvarModelo()">Salvar</button>
+    </footer>

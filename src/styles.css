@@ -7,6 +7,15 @@ body > * {
 	color: #fff;
 	background-color: #0073CF;
 	border-color: #0073CF;
+}
+
+.btn-secondary {
+	color: #A098AE;
+	background-color: #EBEBEB;
+	border-color: #EBEBEB;
+}
+
+.btn {
 	font-weight: 500;
 	font-size: 18px;
 }

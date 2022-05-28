@@ -12,6 +12,9 @@ import { ModelsComponent } from './components/models/models.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { ModelFormComponent } from './components/model-form/model-form.component';
+import { LayoutSubComponent } from './components/layout-sub/layout-sub.component';
+import { CollectionFormComponent } from './components/collection-form/collection-form.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { HttpClientModule } from '@angular/common/http';
     MenuComponent,
     CollectionsComponent,
     ModelsComponent,
-    LayoutComponent
+    LayoutComponent,
+    ModelFormComponent,
+    LayoutSubComponent,
+    CollectionFormComponent
   ],
   imports: [
     BrowserModule,

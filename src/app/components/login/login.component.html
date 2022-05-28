@@ -2,14 +2,15 @@
 <div id="box_login">
     <h4>Sign In</h4>
     <p>Insira suas credenciais para acessar sua conta</p>
+    <br>
     <form [formGroup]="formularioLogin">
-        <input type="email" formControlName='email' class="form-control" name="" id="" placeholder="Informe seu e-mail">
+        <input type="email" formControlName='email' class="form-control" placeholder="Informe seu e-mail">
         <br>
-        <input type="password" formControlName='senha' class="form-control" name="" id="" placeholder="Informe sua senha">
-        <br>
-        <br>
-        <button type="button" class="btn btn-primary btn-lg mr-2" (click)="logar()">Entrar</button>
+        <input type="password" formControlName='senha' class="form-control" placeholder="Informe sua senha">
+        <small class="form-text text-muted" *ngIf="errouSenha">E-mail ou senha inválidos.</small>
+        <small class="form-text text-muted" *ngIf="!errouSenha">&nbsp;</small>
     </form>
+    <button type="button" class="btn btn-primary btn-lg" (click)="logar()">Entrar</button>
 </div>
 <div>
     <p id="forgot_pwd">Esqueceu sua senha?&nbsp;<a routerLink="/forgotpassword">Redefinir senha</a></p>

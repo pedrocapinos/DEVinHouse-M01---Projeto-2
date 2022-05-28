@@ -11,6 +11,7 @@ import { Router } from '@angular/router';
 export class LoginComponent implements OnInit {
 
   formValid = false;
+  errouSenha = false;
 
   public formularioLogin: FormGroup = this.fb.group({
     email: ['', [Validators.required, Validators.email]],
@@ -25,7 +26,8 @@ export class LoginComponent implements OnInit {
       // console.log(this.formularioLogin.value)
     }
     else {
-      alert('E-mail ou senha inválidos.')
+      // alert('E-mail ou senha inválidos.')
+      this.errouSenha = true;
     }
   }
 

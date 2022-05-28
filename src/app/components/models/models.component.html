@@ -1,5 +1,5 @@
 <h3>Modelos</h3>
-<button type="button" class="btn btn-primary btn-lg mr-2">Criar Modelo</button>
+<button type="button" class="btn btn-primary btn-lg" routerLink="newmodel">Criar Modelo</button>
 <table class="table">
     <thead>
         <tr>
@@ -10,23 +10,12 @@
         </tr>
     </thead>
     <tbody>
-        <tr >
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
+        <!-- <tr *ngFor="let modelo of modelos$ | async" [routerLink]="'app/editarmodel/'+modelo.id"> -->
+        <tr *ngFor="let modelo of modelos$ | async" (click)="editarModelo(modelo.id)" style="cursor: pointer;">
+            <th scope="row">{{modelo.id}}</th>
+            <td>{{modelo.nome}}</td>
+            <td>{{modelo.colecao}}</td>
+            <td>{{modelo.responsavel}}</td>
         </tr>
     </tbody>
 </table>

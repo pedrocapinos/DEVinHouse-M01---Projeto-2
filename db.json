@@ -1,14 +1,87 @@
 {
   "collections": [
-      { "id": 1, "nome": "Coleção 1" , "lançamento": "Primavera", "ano": "2022", "orçamento": 10000, "responsavel": "James", "marca": "Nike" },
-      { "id": 2, "nome": "Coleção 2" , "lançamento": "Verão", "ano": "2023", "orçamento": 7000, "responsavel": "Dave", "marca": "Gibson" },
-      { "id": 3, "nome": "Coleção 3" , "lançamento": "Outono", "ano": "2023", "orçamento": 6000, "responsavel": "Lars", "marca": "Fender" },
-      { "id": 4, "nome": "Coleção 4" , "lançamento": "Inverno", "ano": "2023", "orçamento": 500, "responsavel": "Ozzy", "marca": "Coke" },
-      { "id": 5, "nome": "Coleção 5" , "lançamento": "Verão", "ano": "2024", "orçamento": 4000, "responsavel": "Bruce", "marca": "Pumba" },
-      { "id": 6, "nome": "Coleção 6" , "lançamento": "Outono", "ano": "2024", "orçamento": 100, "responsavel": "André", "marca": "Adidas" }
+    {
+      "id": 1,
+      "nome": "Coleção 1",
+      "lançamento": "Primavera",
+      "ano": "2022",
+      "orçamento": 10000,
+      "responsavel": "James",
+      "marca": "Nike"
+    },
+    {
+      "id": 2,
+      "nome": "Coleção 2",
+      "lançamento": "Verão",
+      "ano": "2023",
+      "orçamento": 7000,
+      "responsavel": "Dave",
+      "marca": "Gibson"
+    },
+    {
+      "id": 3,
+      "nome": "Coleção 3",
+      "lançamento": "Outono",
+      "ano": "2023",
+      "orçamento": 6000,
+      "responsavel": "Lars",
+      "marca": "Fender"
+    },
+    {
+      "id": 4,
+      "nome": "Coleção 4",
+      "lançamento": "Inverno",
+      "ano": "2023",
+      "orçamento": 500,
+      "responsavel": "Ozzy",
+      "marca": "Paranoid"
+    },
+    {
+      "id": 5,
+      "nome": "Coleção 5",
+      "lançamento": "Verão",
+      "ano": "2024",
+      "orçamento": 4000,
+      "responsavel": "Bruce",
+      "marca": "Pumba"
+    },
+    {
+      "id": 6,
+      "nome": "Coleção 6",
+      "lançamento": "Outono",
+      "ano": "2024",
+      "orçamento": 100,
+      "responsavel": "André",
+      "marca": "Adidas"
+    }
   ],
   "models": [
-    { "id": 1, "nome": "Modelo 1", "colecao": 1, "bordado": false, "estampa": true, "tipo": "Calça" },
-    { "id": 2, "nome": "Modelo 2", "colecao": 1, "bordado": true, "estampa": false, "tipo": "Bermuda" }
+    {
+      "id": 1,
+      "nome": "Boné do Black Sabbath",
+      "responsavel": "Ozzy",
+      "tipo": "Boné",
+      "colecao": "Coleção 4",
+      "bordado": false,
+      "estampa": true
+    },
+    {
+      "nome": "Camiseta DEVinHouse",
+      "responsavel": "Fernando",
+      "tipo": "Camisa",
+      "colecao": "Coleção 6",
+      "bordado": true,
+      "estampa": false,
+      "id": 2
+    },
+    {
+      "nome": "Bermuda de usar no presencial da Audaces",
+      "responsavel": "Yan",
+      "tipo": "Bermuda",
+      "colecao": "Coleção 2",
+      "bordado": true,
+      "estampa": false,
+      "id": 3
+    }
   ]
 }
