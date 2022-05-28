@@ -3,26 +3,23 @@
 <form [formGroup]="formularioModelo">
     <div class="row">
         <div class="col-md-5">
-            <input type="text" formControlName='nome' class="form-control" name="" id="" placeholder="Nome do Modelo">
+            <input type="text" formControlName='nome' class="form-control" placeholder="Nome do Modelo">
         </div>
         <div class="col-md-5">
-            <input type="text" formControlName='responsavel' class="form-control" name="" id=""
-                placeholder="Responsável pelo Modelo">
+            <input type="text" formControlName='responsavel' class="form-control" placeholder="Responsável pelo Modelo">
         </div>
     </div>
     <div class="row">
         <div class="col-md-5">
-            <select formControlName='tipo' class="form-control" name="" id="">
+            <select formControlName='tipo' class="form-control">
                 <option value="" disabled selected hidden>Tipo do Modelo</option>
                 <option *ngFor="let item of tiposModelo">{{item}}</option>
             </select>
         </div>
         <div class="col-md-5">
-            <select formControlName='colecao' class="form-control" name="" id="">
+            <select formControlName='colecao' class="form-control">
                 <option value="" disabled selected hidden>Selecionar coleção</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
+                <option *ngFor="let colecao of colecoes$ | async" value="{{colecao.nome}}">{{colecao.nome}}</option>
             </select>
         </div>
     </div>

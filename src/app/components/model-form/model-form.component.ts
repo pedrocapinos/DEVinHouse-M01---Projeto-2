@@ -1,8 +1,11 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ModelsService } from 'src/app/services/models.service';
 import { Location } from '@angular/common';
+import { CollectionsService } from 'src/app/services/collections.service';
+import { Observable } from 'rxjs';
+import { Collection } from 'src/app/interfaces/collection';
 
 @Component({
   selector: 'app-model-form',
@@ -14,6 +17,8 @@ export class ModelFormComponent implements OnInit {
   formValid = false;
   editar = false;
 
+  public colecoes$!: Observable<Collection[]>;
+
   public tiposModelo = [
     "Bermuda",
     "Biquini",
@@ -24,19 +29,23 @@ export class ModelFormComponent implements OnInit {
     "Camisa",
     "Chapéu",
     "Saia"
-  ]
+  ];
+
+  public colecoesAtivas!:any;
 
   public formularioModelo!: FormGroup;
 
   constructor(
     private fb: FormBuilder,
-    private router: Router,
     private activated: ActivatedRoute,
     private modelsService: ModelsService,
+    private collectionsService: CollectionsService,
     private location: Location
     ) { }
 
   ngOnInit(): void {
+
+    this.colecoes$ = this.collectionsService.listar();
 
     let registro = null;
 

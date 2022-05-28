@@ -1,63 +1,47 @@
-<div class="container">
-  <header id="titulo">
-    <h2>Bem vindo, Yan</h2>
-    <p>Acompanhe a visão geral de suas coleções</p>
-  </header>
-  <div class="row">
-    <div class="col-lg-4">
-      <div class="card text-center">
-        <div class="card-body">
-          <p class="card-text">Coleções</p>
-          <h5 class="card-title">{{numeroColecoes}}</h5>
-        </div>
+<header id="titulo">
+  <h2>Bem vindo, Yan</h2>
+  <p>Acompanhe a visão geral de suas coleções</p>
+</header>
+<div class="row">
+  <div class="col-lg-4">
+    <div class="card text-center">
+      <div class="card-body">
+        <p class="card-text">Coleções</p>
+        <h5 class="card-title">{{numeroColecoes}}</h5>
       </div>
     </div>
-    <div class="col-lg-4">
-      <div class="card text-center">
-        <div class="card-body">
-          <p class="card-text">Modelos</p>
-          <h5 class="card-title">{{numeroModelos}}</h5>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4">
-      <div class="card text-center">
-        <div class="card-body">
-          <p class="card-text">Orçamento Médio por Coleção</p>
-          <h5 class="card-title">R$ {{orcamentoMedio}}</h5>
-        </div>
-      </div>
-    </div>
-    <table class="table table-hover">
-      <thead>
-        <tr>
-          <th scope="col">ID</th>
-          <th scope="col">Nome da Coleção</th>
-          <th scope="col">Orçamento</th>
-          <th scope="col">Responsável</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-        <tr>
-          <th scope="row">2</th>
-          <td>Jacob</td>
-          <td>Thornton</td>
-          <td>@fat</td>
-        </tr>
-        <tr>
-          <th scope="row">3</th>
-          <td>Larry</td>
-          <td>the Bird</td>
-          <td>@twitter</td>
-        </tr>
-      </tbody>
-    </table>
-
-
   </div>
+  <div class="col-lg-4">
+    <div class="card text-center">
+      <div class="card-body">
+        <p class="card-text">Modelos</p>
+        <h5 class="card-title">{{numeroModelos}}</h5>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="card text-center">
+      <div class="card-body">
+        <p class="card-text">Orçamento Médio por Coleção</p>
+        <h5 class="card-title">R$ {{orcamentoMedio}}</h5>
+      </div>
+    </div>
+  </div>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">ID</th>
+        <th scope="col">Nome da Coleção</th>
+        <th scope="col">Orçamento</th>
+        <th scope="col">Responsável</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let colecao of colecoes$ | async" >
+        <th scope="row">{{colecao.id}}</th>
+        <td>{{colecao.nome}}</td>
+        <td>{{colecao.orcamento | currency : 'BRL' }}</td>
+        <td>{{colecao.responsavel}}</td>
+    </tr>
+    </tbody>
+  </table>

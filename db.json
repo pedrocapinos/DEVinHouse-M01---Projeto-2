@@ -3,56 +3,65 @@
     {
       "id": 1,
       "nome": "Coleção 1",
-      "lançamento": "Primavera",
+      "lancamento": "Primavera",
       "ano": "2022",
-      "orçamento": 10000,
+      "orcamento": 1000,
       "responsavel": "James",
       "marca": "Nike"
     },
     {
       "id": 2,
       "nome": "Coleção 2",
-      "lançamento": "Verão",
+      "lancamento": "Verão",
       "ano": "2023",
-      "orçamento": 7000,
+      "orcamento": 7000,
       "responsavel": "Dave",
       "marca": "Gibson"
     },
     {
       "id": 3,
       "nome": "Coleção 3",
-      "lançamento": "Outono",
+      "lancamento": "Outono",
       "ano": "2023",
-      "orçamento": 6000,
+      "orcamento": 6000,
       "responsavel": "Lars",
       "marca": "Fender"
     },
     {
       "id": 4,
       "nome": "Coleção 4",
-      "lançamento": "Inverno",
+      "lancamento": "Inverno",
       "ano": "2023",
-      "orçamento": 500,
+      "orcamento": 500,
       "responsavel": "Ozzy",
       "marca": "Paranoid"
     },
     {
       "id": 5,
       "nome": "Coleção 5",
-      "lançamento": "Verão",
+      "lancamento": "Verão",
       "ano": "2024",
-      "orçamento": 4000,
+      "orcamento": 4000,
       "responsavel": "Bruce",
       "marca": "Pumba"
     },
     {
       "id": 6,
       "nome": "Coleção 6",
-      "lançamento": "Outono",
+      "lancamento": "Outono",
       "ano": "2024",
-      "orçamento": 100,
+      "orcamento": 100,
       "responsavel": "André",
       "marca": "Adidas"
+    },
+    {
+      "id": 7,
+      "nome": "Coleção 7",
+      "lancamento": "Verão",
+      "ano": "2036",
+      "orcamento": 50,
+      "responsavel": "Pablo",
+      "marca": "Le Cheval"
     }
   ],
   "models": [
@@ -66,13 +75,13 @@
       "estampa": true
     },
     {
+      "id": 2,
       "nome": "Camiseta DEVinHouse",
       "responsavel": "Fernando",
       "tipo": "Camisa",
-      "colecao": "Coleção 6",
+      "colecao": "Coleção 7",
       "bordado": true,
-      "estampa": false,
-      "id": 2
+      "estampa": false
     },
     {
       "nome": "Bermuda de usar no presencial da Audaces",

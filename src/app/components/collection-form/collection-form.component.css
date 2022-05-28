@@ -1,0 +1,33 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    width: 100%;
+}
+
+.btn-danger {
+    margin-right: auto;
+}
+
+button {
+    align-self: flex-end;
+    margin: 40px;
+    width: 220px;
+}
+
+.col-md-5 {
+    margin: 20px;
+}
+
+.form-check-label {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+
+footer {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+}

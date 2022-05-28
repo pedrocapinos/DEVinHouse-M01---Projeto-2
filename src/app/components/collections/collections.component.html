@@ -1,32 +1,20 @@
 <h3>Coleções</h3>
-<button type="button" class="btn btn-primary btn-lg">Criar Coleção</button>
+<button type="button" class="btn btn-primary btn-lg" routerLink="newcollection">Criar Coleção</button>
 <table class="table">
     <thead>
         <tr>
-            <th scope="col">ModeloID</th>
-            <th scope="col">Nome do Modelo</th>
-            <th scope="col">Coleção</th>
+            <th scope="col">ColecaoID</th>
+            <th scope="col">Nome da Coleção</th>
+            <th scope="col">Estação e Lançamento</th>
             <th scope="col">Responsável</th>
         </tr>
     </thead>
     <tbody>
-        <tr >
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>the Bird</td>
-            <td>@twitter</td>
+        <tr *ngFor="let colecao of colecoes$ | async" (click)="editarColecao(colecao.id)" style="cursor: pointer;">
+            <th scope="row">{{colecao.id}}</th>
+            <td>{{colecao.nome}}</td>
+            <td>{{colecao.lancamento}} {{colecao.ano}}</td>
+            <td>{{colecao.responsavel}}</td>
         </tr>
     </tbody>
 </table>

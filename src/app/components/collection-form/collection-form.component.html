@@ -1,1 +1,35 @@
-<p>collection-form works!</p>
+<h3 *ngIf="editar">Editar Coleção</h3>
+<h3 *ngIf="!editar">Criar Coleção</h3>
+<form [formGroup]="formularioColecao">
+    <div class="row">
+        <div class="col-md-5">
+            <input type="text" formControlName='nome' class="form-control" placeholder="Nome da Coleção">
+        </div>
+        <div class="col-md-5">
+            <input type="text" formControlName='responsavel' class="form-control"
+                placeholder="Responsável pela Coleção">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <input type="text" formControlName='lancamento' class="form-control" placeholder="Para qual estação?">
+        </div>
+        <div class="col-md-5">
+            <input type="text" formControlName='marca' class="form-control"
+                placeholder="Para qual marca você está criando?">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <input type="number" formControlName='orcamento' class="form-control" placeholder="Qual o orçamento desta coleção?">
+        </div>
+        <div class="col-md-5">
+            <input type="text" formControlName='ano' class="form-control" placeholder="Ano de lançamento">
+        </div>
+    </div>
+</form>
+<!-- <img src="/assets/image 1.svg"> -->
+<footer>
+    <button type="button" class="btn btn-secondary btn-lg" (click)="cancelarColecao()">Cancelar</button>
+    <button type="button" class="btn btn-primary btn-lg" (click)="salvarColecao()">Salvar</button>
+</footer>
