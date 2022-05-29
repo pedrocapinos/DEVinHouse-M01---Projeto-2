@@ -31,7 +31,7 @@ export class CollectionFormComponent implements OnInit {
       id: null,
       nome: ['', [Validators.required]],
       lancamento: ['', [Validators.required, Validators.minLength(4)]],
-      ano: ['', [Validators.required]],
+      ano: ['', [Validators.required, Validators.min(0)]],
       orcamento: ['', [Validators.required, Validators.min(0)]],
       responsavel: ['', [Validators.required]],
       marca: ['', [Validators.required]]

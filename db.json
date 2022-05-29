@@ -4,7 +4,7 @@
       "id": 1,
       "nome": "Coleção 1",
       "lancamento": "Primavera",
-      "ano": "2022",
+      "ano": 2022,
       "orcamento": 1000,
       "responsavel": "James",
       "marca": "Nike"
@@ -13,7 +13,7 @@
       "id": 2,
       "nome": "Coleção 2",
       "lancamento": "Verão",
-      "ano": "2023",
+      "ano": 2023,
       "orcamento": 7000,
       "responsavel": "Dave",
       "marca": "Gibson"
@@ -31,7 +31,7 @@
       "id": 4,
       "nome": "Coleção 4",
       "lancamento": "Inverno",
-      "ano": "2023",
+      "ano": 2023,
       "orcamento": 500,
       "responsavel": "Ozzy",
       "marca": "Paranoid"
@@ -40,7 +40,7 @@
       "id": 5,
       "nome": "Coleção 5",
       "lancamento": "Verão",
-      "ano": "2024",
+      "ano": 2024,
       "orcamento": 4000,
       "responsavel": "Bruce",
       "marca": "Pumba"
@@ -49,7 +49,7 @@
       "id": 6,
       "nome": "Coleção 6",
       "lancamento": "Outono",
-      "ano": "2024",
+      "ano": 2024,
       "orcamento": 100,
       "responsavel": "André",
       "marca": "Adidas"
@@ -58,7 +58,7 @@
       "id": 7,
       "nome": "Coleção 7",
       "lancamento": "Verão",
-      "ano": "2036",
+      "ano": 2036,
       "orcamento": 50,
       "responsavel": "Pablo",
       "marca": "Le Cheval"
