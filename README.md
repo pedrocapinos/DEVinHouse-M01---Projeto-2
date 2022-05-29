@@ -15,7 +15,7 @@
 > - Login/Recuperar senha com validação: e-mail válido e senha de seis caracteres;
 >
 >## Bugs Conhecidos
-> - Há uma pequena incongruência no alinhamento dos botões de criar modelos/criar coleção no Figma. Em um caso o botão está alinhado com o texto do cabeçalho e em outro está abaixo do texto. Optei por deixar os botões alinhados ao texto do cabeçalho.
+> - Há uma pequena diferença no alinhamento dos botões de criar modelos e de criar coleção no Figma. Em um caso o botão está alinhado com o texto do cabeçalho e em outro está abaixo do texto. Optei por deixar os botões alinhados ao texto do cabeçalho.
 > - Por enquanto nenhum bug conhecido.
 >
 > ## Desafios
