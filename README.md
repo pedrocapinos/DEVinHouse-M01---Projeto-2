@@ -9,13 +9,9 @@
 >
 >## Features
 > - Simulação de backeng com o json-server;
->
 > - Dashboard com informações gerais;
-> 
 > - Registro e edição de Coleções;
->
 > - Registro, remoção e edição de Modelos;
->
 > - Login/Recuperar senha com validação: e-mail válido e senha de seis caracteres;
 >
 >## Bugs Conhecidos
@@ -24,4 +20,4 @@
 >
 > ## Desafios
 > - Exibir os valores monetários com Angular foi mais complicado do que utilizando JS.
-> - 
+> - Para conseguir manter o routerLinkActive, e portanto a estilização do botão do menu ativa, acabei utilizando rotas aninhadas.
