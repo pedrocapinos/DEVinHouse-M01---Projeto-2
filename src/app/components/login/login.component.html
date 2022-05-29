@@ -1,16 +1,17 @@
 <img id="logo_audaces" src="/assets/Fill-51.svg" alt="">
-<div id="box_login">
-    <h4>Sign In</h4>
-    <p>Insira suas credenciais para acessar sua conta</p>
-    <br>
-    <form [formGroup]="formularioLogin">
-        <input type="email" formControlName='email' class="form-control" placeholder="Informe seu e-mail">
+<div id="outerbox_login">
+    <div id="box_login">
+        <h4>Sign In</h4>
+        <p>Insira suas credenciais para acessar sua conta</p>
         <br>
-        <input type="password" formControlName='senha' class="form-control" placeholder="Informe sua senha">
-        <small class="form-text text-muted" *ngIf="errouSenha">E-mail ou senha inválidos.</small>
-        <small class="form-text text-muted" *ngIf="!errouSenha">&nbsp;</small>
-    </form>
-    <button type="button" class="btn btn-primary btn-lg" (click)="logar()">Entrar</button>
+        <form [formGroup]="formularioLogin">
+            <input type="email" formControlName='email' class="form-control mb-4" placeholder="Informe seu e-mail">
+            <input type="password" formControlName='senha' class="form-control" placeholder="Informe sua senha">
+            <small class="form-text text-muted" *ngIf="errouSenha">E-mail ou senha inválidos.</small>
+            <small class="form-text text-muted" *ngIf="!errouSenha">&nbsp;</small>
+        </form>
+        <button type="button" class="btn btn-primary btn-lg" (click)="logar()">Entrar</button>
+    </div>
 </div>
 <div>
     <p id="forgot_pwd">Esqueceu sua senha?&nbsp;<a routerLink="/forgotpassword">Redefinir senha</a></p>

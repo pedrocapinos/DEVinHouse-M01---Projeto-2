@@ -3,10 +3,17 @@
     flex-direction: column;
     margin: 50px;
     width: 100%;
+    background-image: url("/assets/image 1.png");
+    background-repeat:no-repeat;
+    background-position: 43% 68%; 
 }
 
-.btn-danger {
-    margin-right: auto;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    margin-bottom: 40px;
 }
 
 button {

@@ -5,8 +5,14 @@
     width: 100%;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    margin-bottom: 80px;
+}
+
 button {
-    align-self: flex-end;
-    margin: 40px;
     width: 220px;
 }

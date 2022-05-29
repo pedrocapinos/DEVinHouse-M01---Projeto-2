@@ -9,6 +9,7 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 export class ForgotPasswordComponent implements OnInit {
 
   formValid = false;
+  errouEmail = false;
 
   public formularioRedefinir: FormGroup = this.fb.group({
     email: ['', [Validators.required, Validators.email]],
@@ -26,7 +27,7 @@ export class ForgotPasswordComponent implements OnInit {
       // console.log(this.formularioRedefinir.value);
     }
     else {
-      alert('E-mail inválido.')
+      this.errouEmail = true;
     }
   }
 

@@ -1,5 +1,7 @@
-<h3 *ngIf="editar">Editar Coleção</h3>
-<h3 *ngIf="!editar">Criar Coleção</h3>
+<header>
+    <h3 *ngIf="editar">Editar Coleção</h3>
+    <h3 *ngIf="!editar">Criar Coleção</h3>
+</header>
 <form [formGroup]="formularioColecao">
     <div class="row">
         <div class="col-md-5">
@@ -21,7 +23,8 @@
     </div>
     <div class="row">
         <div class="col-md-5">
-            <input type="number" formControlName='orcamento' class="form-control" placeholder="Qual o orçamento desta coleção?">
+            <input type="number" formControlName='orcamento' class="form-control"
+                placeholder="Qual o orçamento desta coleção?">
         </div>
         <div class="col-md-5">
             <input type="text" formControlName='ano' class="form-control" placeholder="Ano de lançamento">

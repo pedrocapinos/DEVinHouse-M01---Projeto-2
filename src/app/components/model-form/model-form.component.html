@@ -1,5 +1,7 @@
-<h3 *ngIf="editar">Editar Modelo</h3>
-<h3 *ngIf="!editar">Criar Modelo</h3>
+<header>
+    <h3 *ngIf="editar">Editar Modelo</h3>
+    <h3 *ngIf="!editar">Criar Modelo</h3>
+</header>
 <form [formGroup]="formularioModelo">
     <div class="row">
         <div class="col-md-5">
@@ -40,8 +42,8 @@
         </div>
     </div>
 </form>
-    <footer>
-        <button *ngIf="editar"class="btn btn-danger btn-lg" (click)=deletarModelo()>Excluir</button>
-        <button type="button" class="btn btn-secondary btn-lg" (click)=cancelarModelo();>Cancelar</button>
-        <button type="button" class="btn btn-primary btn-lg" (click)="salvarModelo()">Salvar</button>
-    </footer>
+<footer>
+    <button *ngIf="editar" class="btn btn-danger btn-lg" (click)=deletarModelo()>Excluir</button>
+    <button type="button" class="btn btn-secondary btn-lg" (click)=cancelarModelo();>Cancelar</button>
+    <button type="button" class="btn btn-primary btn-lg" (click)="salvarModelo()">Salvar</button>
+</footer>

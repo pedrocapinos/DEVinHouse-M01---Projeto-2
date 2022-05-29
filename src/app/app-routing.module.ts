@@ -7,7 +7,6 @@ import { HomeComponent } from './components/home/home.component';
 import { LayoutSubComponent } from './components/layout-sub/layout-sub.component';
 import { LayoutComponent } from './components/layout/layout.component';
 import { LoginComponent } from './components/login/login.component';
-import { MenuComponent } from './components/menu/menu.component';
 import { ModelFormComponent } from './components/model-form/model-form.component';
 import { ModelsComponent } from './components/models/models.component';
 
@@ -39,7 +38,7 @@ const routes: Routes = [
       { path: '', redirectTo: 'home', pathMatch: 'full'},
     ]
   },
-  // { path: '**', component: LoginComponent }
+  { path: '**', component: LoginComponent }
 ];
 
 @NgModule({

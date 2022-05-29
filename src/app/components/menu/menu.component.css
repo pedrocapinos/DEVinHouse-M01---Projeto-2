@@ -1,6 +1,6 @@
 :host {
     /* no figma o menu tem 220px e a tela inteira tem 1513px de largura, então usei 15% para largura do componente */
-    max-width: 15rem;
+    max-width: 15em;
     min-height: 100vh;
     background-color: #FEFEFE;
     display: flex;

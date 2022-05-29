@@ -5,6 +5,18 @@
     width: 100%;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 10vh;
+    margin-bottom: 40px;
+}
+
+button {
+    width: 220px;
+}
+
 .btn-danger {
     margin-right: auto;
 }

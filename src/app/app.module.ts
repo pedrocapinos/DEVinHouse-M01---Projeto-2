@@ -19,7 +19,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { ModelFormComponent } from './components/model-form/model-form.component';
 import { LayoutSubComponent } from './components/layout-sub/layout-sub.component';
 import { CollectionFormComponent } from './components/collection-form/collection-form.component';
-import { OrderPipe } from './pipes/order.pipe';
 
 registerLocaleData(localePt, 'pt');
 
@@ -36,7 +35,6 @@ registerLocaleData(localePt, 'pt');
     ModelFormComponent,
     LayoutSubComponent,
     CollectionFormComponent,
-    OrderPipe
   ],
   imports: [
     BrowserModule,
