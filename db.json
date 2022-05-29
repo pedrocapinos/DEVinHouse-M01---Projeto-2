@@ -24,7 +24,7 @@
       "lancamento": "Outono",
       "ano": "2023",
       "orcamento": 6000,
-      "responsavel": "Lars",
+      "responsavel": "Pamylla",
       "marca": "Fender"
     },
     {
@@ -91,6 +91,33 @@
       "bordado": true,
       "estampa": false,
       "id": 3
+    },
+    {
+      "nome": "Calça de usar em casa",
+      "responsavel": "Pedro",
+      "tipo": "Calça",
+      "colecao": "Coleção 5",
+      "bordado": false,
+      "estampa": false,
+      "id": 4
+    },
+    {
+      "nome": "Chapéu querySelector()",
+      "responsavel": "Pedro",
+      "tipo": "Chapéu",
+      "colecao": "Coleção 1",
+      "bordado": true,
+      "estampa": false,
+      "id": 5
+    },
+    {
+      "nome": "Kilt",
+      "responsavel": "William Wallace",
+      "tipo": "Saia",
+      "colecao": "Coleção 4",
+      "bordado": true,
+      "estampa": false,
+      "id": 6
     }
   ]
 }
